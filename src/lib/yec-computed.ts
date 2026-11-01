@@ -15,6 +15,8 @@ const metaMap = artistMetadata as Record<string, ArtistMeta>;
 
 function classifyArtist(name: string): "female" | "male" | "group" | "pending" {
   const slug = name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  // Potyguara Bardo is a non-binary solo artist; excluded from gendered and group YEC categories.
+  if (slug === "potyguara-bardo") return "pending";
   const meta = metaMap[slug];
 
   if (meta?.categoryConfirmed && meta.category) {
