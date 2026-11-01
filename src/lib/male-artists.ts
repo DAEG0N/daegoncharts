@@ -2,7 +2,7 @@ export const MALE_ARTISTS = new Set([
   "jão", "the weeknd", "pabllo vittar", "bad bunny", "harry styles",
   "post malone", "conan gray", "morgan wallen", "kanye west",
   "michael jackson", "steve lacy", "lil nas x", "adam lambert",
-  "potyguara bardo", "bruno mars", "justin bieber", "zayn", "don l",
+  "bruno mars", "justin bieber", "zayn", "don l",
   "calvin harris", "shawn mendes", "aminé", "ed sheeran",
   "justin timberlake", "omar apollo", "lil peep", "troye sivan",
   "cazuza", "j balvin", "guilherme arantes", "drake", "silva",
